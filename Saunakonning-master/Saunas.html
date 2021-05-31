@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="saunas.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Saunas</title>
+</head>
+
+<body>
+    <nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <a class="navbar-brand" href="#"><img class="logoNav" src="images/transparentlogo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="index.html">HOME</a>
+                    <a class="nav-item nav-link" href="#">ABOUT US</a>
+                    <a class="nav-item nav-link" href="Shop-1.html">WEB SHOP</a>
+                    <a class="nav-item nav-link" href="showroom.html">SHOWROOMS</a>
+                    <a class="nav-item nav-link" href="#">CONTACT US</a>
+                    <a class="nav-item nav-link" href="#">BLOG</a>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="btn-group">
+                <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Sort by
+                </button>
+                <div class="dropdown-menu">
+                    <p>High to Low</p>
+                    <p>Low to High</p>
+                    <p>Most bought</p>
+                    <p>Top rated</p>
+                    <p>A - Z</p>
+                    <p>Z - A</p>
+                </div>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Filter by
+                </button>
+                <div class="dropdown-menu Categories">
+                        <h2>Types:</h2>
+                        <section>
+                            <button class="accordion">
+                                Outdoors
+                            </button>
+                            <div class="panel">
+                                <div>
+                                    <div><input type="checkbox" name="Categories" value="Barel" id="Barel"><label
+                                            for="Barel">Barel</label></div>
+                                    <div><input type="checkbox" name="Categories" value="Traditional" id="Traditional"><label
+                                            for="Traditional">Traditional sauna</label></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <button class="accordion">
+                                Indoors
+                            </button>
+                            <div class="panel">
+                                <div>
+                                    <div><input type="checkbox" name="Categories" value="Design" id="Design"><label
+                                            for="Design">Design Sauna</label></div>
+                                    <div><input type="checkbox" name="Categories" value="Budget" id="Budget"><label
+                                            for="Budget"> Budget Sauna</label></div>
+                                    <div><input type="checkbox" name="Categories" value="Sauna" id="Sauna"><label
+                                            for="Sauna">Traditional Sauna</label></div>
+                                    <div><input type="checkbox" name="Categories" value="Combi" id="Combi"><label
+                                            for="Combi">Combi Sauna</label></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <button class="accordion">
+                                <h3>Size:</h3>
+                            </button>
+                            <div class="panel">
+                                <div>
+                                    <div><input type="checkbox" name="Size" value="s-1" id="s-1"><label
+                                            for="s-1">1 - 3 people IR saunas</label></div>
+                                    <div><input type="checkbox" name="Size" value="s-2" id="s-2"><label
+                                            for="s-2">4- 5 people IR saunas</label></div>
+                                    <div><input type="checkbox" name="Size" value="s-3" id="s-3"><label
+                                            for="s-3">6 people IR saunas</label></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <h2>Price:</h2>
+                            <input type="range" min="1" max="7000" value="1350" class="slider" id="myRange">
+                            <p>Value: € <span id="demo"></span></p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="">
+                <div class="columns">
+                    <div class="Categories">
+                        <h2>Types:</h2>
+                        <section>
+                            <button class="accordion">
+                                Outdoors
+                            </button>
+                            <div class="panel">
+                                <div>
+                                    <div><input type="checkbox" name="Categories" value="Sweat" id="Sweat"><label
+                                            for="Sweat">Barel</label></div>
+                                    <div><input type="checkbox" name="Categories" value="Dress" id="Dress"><label
+                                            for="Dress">Traditional sauna</label></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <button class="accordion">
+                                Indoors
+                            </button>
+                            <div class="panel">
+                                <div>
+                                    <div><input type="checkbox" name="Categories" value="Sweat" id="Sweat"><label
+                                            for="Sweat">Design Sauna</label></div>
+                                    <div><input type="checkbox" name="Categories" value="Dress" id="Dress"><label
+                                            for="Dress"> Budget Sauna</label></div>
+                                    <div><input type="checkbox" name="Categories" value="Pant" id="Pant"><label
+                                            for="Pant">Traditional Sauna</label></div>
+                                    <div><input type="checkbox" name="Categories" value="Skirt" id="Skirt"><label
+                                            for="Skirt">Combination Sauna</label></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <button class="accordion">
+                                <h3>Size:</h3>
+                            </button>
+                            <div class="panel">
+                                <div>
+                                    <div><input type="checkbox" name="Categories" value="Sweat" id="Sweat"><label
+                                            for="Sweat">1 - 3 people IR saunas</label></div>
+                                    <div><input type="checkbox" name="Categories" value="Dress" id="Dress"><label
+                                            for="Dress">4- 5 people IR saunas</label></div>
+                                    <div><input type="checkbox" name="Categories" value="Pant" id="Pant"><label
+                                            for="Pant">6
+                                            people IR saunas</label></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <h2>Price:</h2>
+                            <input type="range" min="1" max="7000" value="1350" class="slider" id="myRange">
+                            <p>Value: € <span id="demo"></span></p>
+                        </section>
+                    </div>
+                </div>
+            </div> -->
+            <div class="row">
+                <div class="column Sauna s-1">
+                    <div class="items">
+                        <img src="images/1000x1000hoekclassicjpg-removebg-preview.png" id="ex1" alt="product">
+                        <p class="name">Panel Classic 500 Corner</p>
+                        <hr>
+                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis pariatur. Excepteur sint
+                            occaecat
+                            cupidatat non proident,</p>
+                        <p class="price">€5,737.00 </p>
+                    </div>
+                </div>
+                <div class="column Barel s-2">
+                    <div class="items">
+                        <img src="images/barrel-red-cedar-Nutty-165cm-and-240cm-978x1030.png"" alt="product" style="width:100%">
+                        <p class="name">Barrel Sauna 170 Knotty</p>
+                        <hr>
+                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis pariatur. Excepteur sint
+                            occaecat
+                            cupidatat non proident,</p>
+                        <p class="price">€ 3.495.00 </p>
+                    </div>
+                </div>
+                <div class="column Budget s-1">
+                    <div class="items">
+                        <img src="images/Elite_6-removebg-preview.png" alt="product" style="width:100%">
+                        <p class="name">Karibu Nadja</p>
+                        <hr>
+                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis pariatur. Excepteur sint
+                            occaecat
+                            cupidatat non proident,</p>
+                        <p class="price">€ 1,159.99 </p>
+                    </div>
+                </div>
+                <div class="column  Combi s-2">
+                    <div class="items">
+                        <img src="images/EX_6-removebg-preview.png" alt="product" style="width:100%">
+                        <p class="name">Enjoy Life IR450+</p>
+                        <hr>
+                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis pariatur. Excepteur sint
+                            occaecat
+                            cupidatat non proident,</p>
+                        <p class="price">€ 4.855.00 </p>
+                    </div>
+                </div>
+                <div class="column Traditional s-1">
+                    <div class="items">
+                        <img src="images/outdoor-traditional.png" alt="product" style="width:100%">
+                        <p class="name">Outdoor sauna SK101</p>
+                        <hr>
+                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis pariatur. Excepteur sint
+                            occaecat
+                            cupidatat non proident,</p>
+                        <p class="price">€ 3,675.00 </p>
+                    </div>
+                </div>
+                <div class="column Budeget s-1">
+                    <div class="items">
+                        <img src="images/EX_3-removebg-preview.png" alt="product" style="width:100%">
+                        <p class="name">Plug & Play - Karibu Lenja</p>
+                        <hr>
+                        <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis pariatur. Excepteur sint
+                            occaecat
+                            cupidatat non proident,</p>
+                        <p class="price">€ 1,129.99 </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <p id="showing">Showing 7 out of 20</p>
+            <hr id="line">
+            <button type="button" id="buttons" class="btn btn-primary btn-lg" onclick="moreInformation()">Load more</button>
+            <div id="more">
+        </main>
+        <footer>
+            <footer>
+                <footer>
+                    <br>
+                    <h3>Sign Up To The SaunaKoning Newsletter</h3>
+                    <div class="cards">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-apple-pay"></i>
+                    </div>
+
+                    <div class="navSplit">
+                        <div class="part1">
+                            <a href="#">ABOUT SAUNAKONING</a>
+                            <a href="#">SHOWROOMS</a> <br>
+                            <a href="#">WEBSHOP</a> <br>
+                            <a href="#">BLOG</a>
+                        </div>
+                        <div class="part2">
+                            <a href="#">PRIVACY POLICY</a> <br>
+                            <a href="#">TERMS & CONDITIONS</a>
+                            <a href="#">CONTACT US</a>
+                        </div>
+                    </div>
+                    <div class="rating">
+                        <p>RATING</p>
+                        <div class="starts">
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="credit">© SaunaKoning, Inc. 2021.</p>
+                </footer>
+            </footer>
+        </footer>
+        <script src="Saunas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.10/lodash.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script
+</body>
+</html>

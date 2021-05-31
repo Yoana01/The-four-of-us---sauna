@@ -1,0 +1,126 @@
+body {
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    height: 100%;
+}
+@media screen and (max-width: 500px) {
+    .logoNav {
+        width: 180px;
+    }
+    .nav-link {
+        color: white;
+    }
+    
+    .contentHome img {
+        width: 400px;
+        height: 700px;
+    }
+    .contentHome {
+        display: grid;
+        height: 90vh;
+        grid-template-rows: 38% 60%;
+    }
+    
+    .text {
+        color: white;
+        margin: auto;
+        text-align: center;
+    }
+    .text p {
+        font-size: 24px;
+        font-family: 'Poppins';
+        font-weight: 100;
+        font-style: italic;
+    }
+    .text button {
+        width: 145px;
+        height: 36px;
+        background: linear-gradient(135deg, #827559 0%, #766951 100%);
+        border: 1px solid #7C6F55;
+        color: #EFD8A9;
+        box-shadow: -5px 5px 10px rgb(112 100 77 / 20%), 5px -5px 10px rgb(112 100 77 / 20%), -5px -5px 10px rgb(136 122 94 / 90%), 5px 5px 13px rgb(112 100 77 / 90%), inset 1px 1px 2px rgb(136 122 94 / 30%), inset -1px -1px 2px rgb(112 100 77 / 50%);
+    }
+
+    /* INFO DIV */ 
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 78%;
+        margin: auto;
+    }
+    .info img{
+       width: 350px;
+       align-self: center;
+    }
+    .info h3 {
+        color: #EFD8A9;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: start;
+    }
+    .info p{
+        font-size: 16px;
+        color: white;
+        font-weight: 100;
+    }
+    .info button {
+        width: 137px;
+        height: 36px;
+        background: #000000;
+        border: 1.5px solid #7C6F55;
+        color: #EFD8A9;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    footer {
+        background-color: #7C6F55;
+        color: black;
+        width: 100%;
+        height: 245px;
+        text-align: center;
+    }
+    footer h3 {
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .cards {
+        justify-content: space-evenly;
+        display: flex;
+        font-size: 20px;
+        margin-bottom: 13px;
+    }
+    .navSplit a {
+        color: black !important;
+    }
+    .navSplit {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        font-size: 12px;
+        width: 90%;
+        margin: auto;
+    }
+    .part1 {
+        text-align: start;
+    }
+    .part2 {
+        text-align: end;
+    }
+
+    .rating {
+        width: 96%;
+        text-align: end;
+        line-height: 0;
+    }
+    .rating p {
+        font-size: 14px;
+    }
+
+    .credit {
+        margin-top: 20px;
+        font-size: 12px;
+        font-weight: lighter;
+    }
+  }
